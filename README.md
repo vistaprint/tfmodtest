@@ -26,7 +26,7 @@ Or install it yourself as:
 In the root of your repository add a `Rakefile` with the following contents:
 
 ```ruby
-require 'terraform_module_testing/module_tasks'
+require 'tfmodtest/module_tasks'
 ```
 
 # Adding tests 
@@ -34,7 +34,7 @@ require 'terraform_module_testing/module_tasks'
 In your repository create `test/<my_module>/Rakefile` and add:
 
 ```ruby
-namespace 'your_modules_namespace' do
+namespace '<your_modules_namespace>' do
   # Required: Import TerraformDevKit base rake tasks.
   # Set the root path of our tests to our location. 
   # TerraformDevKit uses this path as the base from where
