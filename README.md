@@ -1,5 +1,7 @@
 # Terraform Module Testing
 
+[![Build Status](https://travis-ci.org/vistaprint/tfmodtest.svg?branch=master)](https://travis-ci.org/vistaprint/tfmodtest)
+
 Terraform Module Testing is a set of rake tasks to easily enable testing for Terraform Module developement. It allows developers to specify tests in a rake task to test remote infrastructure is created as expected when using a module. It then destroys the environment after the test has run.
 
 Currently this repository is tightly coupled with AWS and has not been tested to work with other providers. We are actively working to change this and hope to have a more generic solution soon. If you would like to see support for your favourite cloud provider please have submit a pull request implementing support and we will be more than happy to merge your changes in.
