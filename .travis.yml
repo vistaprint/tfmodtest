@@ -1,16 +1,16 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.1.6
-before_install: 
-  - gem install bundler -v 1.14.6
+- 2.1.6
+before_install:
+- gem install bundler -v 1.14.6
 os:
-  - linux
-  - osx
+- linux
+- osx
 deploy:
   provider: rubygems
   api_key:
-    secure: # Generate new key
+    secure: cEI9LKkhADHmTGsiCsqUwhjVAW/qtWd7NhPMPsgEvPbHFB6qO/zmocbceEWIcQT3WKp9i/RzSF5zrD3cmCEMmjs7e4XaVFn0NOoDFBQIZgWk5PfbGMlVaCArGJ80tbhCFLFfVqyw7pR4OtP5ov6nULi8HBdfq5ffmjC92Pg0phWDTsyKGHesXuvMUjyx8y61hZOaXkkYd5T8MaN/9ahdM0r6hp2XX5RZDWm0712b2qKO/9gBH1WUaYyiawiNmHtLsUwgobZC6s8i5EObqAY0EbFBr69vUy7mQvJtWUGQJP89RdZ9jpqOHFoSsYuBWhYixWUOmgoV2z4jBUYGGIU+Il+57SjQPB4bH5FK3OvSD6ctN7kbEWnenYhJsn2UnVtR68PrXu/xvrCmfKcQ5NgNb+eJLInjeE42OH3+Oqx2RAjGRB8yV8a+WW7rymXZ89UHYODZd8dhbRwMH8nkfblMa6f7uZXeUF9wtahh2d12xj4APLvQLN24EMX46/TXiP2IjYzeYQf4loG0SnDjds94g9aTX4SdybiIdSrThyKcgNwlrQtKq4Gp0/yfCQxtfhqcZDoPVOU3Rts3uITiqV4/jqyF2UeFPfdhZuEaAsy9OlnA9fgfN9L70b/ylhHbJfkyzVIUP8o/7VZzMqyiyXctYM9+XM4408GALFdqPwdDFM4=
   gem: tfmodtest
   on:
     tags: true
