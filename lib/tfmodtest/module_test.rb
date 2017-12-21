@@ -24,7 +24,7 @@ module TFModTest
         rescue RuntimeError => e
           puts e.message
           puts e.backtrace.join("\n")
-          Rake::Task[':clean'].invoke(DEFAULT_PREFIX)
+          Rake::Task["#{@module_name}:clean"].invoke(DEFAULT_PREFIX)
           raise "Error testing module #{@module_name}"
         end
       end
