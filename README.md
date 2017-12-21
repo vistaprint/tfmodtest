@@ -1,6 +1,7 @@
 # Terraform Module Testing
 
 [![Build Status](https://travis-ci.org/vistaprint/tfmodtest.svg?branch=master)](https://travis-ci.org/vistaprint/tfmodtest)
+[![Gem Version](https://badge.fury.io/rb/tfmodtest.svg)](https://badge.fury.io/rb/tfmodtest)
 
 Terraform Module Testing is a set of rake tasks to easily enable testing for Terraform Module developement. It allows developers to specify tests in a rake task to test remote infrastructure is created as expected when using a module. It then destroys the environment after the test has run.
 
@@ -9,7 +10,7 @@ Currently this repository is tightly coupled with AWS and has not been tested to
 # Installation
 Add this line to your application's Gemfile:
 
-`gem 'terraform_module_testing'`  
+`gem 'tfmodtest'`  
 
 And then execute:
 
@@ -17,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-`$ gem install terraform_module_testing`
+`$ gem install tfmodtest`
 
 ## Getting started
 
