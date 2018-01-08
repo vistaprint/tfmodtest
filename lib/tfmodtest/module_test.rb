@@ -10,8 +10,11 @@ module TFModTest
 
     def run_task(task_name)
       puts("=== Running task #{task_name} for module #{@module_name} ===")
-      module_path = File.join('test', @module_name)
       run_task_in_directory(task_name, module_path)
+    end
+
+    def module_path
+      File.join('test', @module_name)
     end
 
     private

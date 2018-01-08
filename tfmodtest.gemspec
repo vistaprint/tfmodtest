@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Victor Jimenez', 'Daniel Baker']
   spec.email         = ['vjimenez@vistaprint.com', 'dbaker@vistaprint.com']
 
-  spec.summary       = 'Set of scripts to ease testing od Terraform modules.'
-  spec.homepage      = 'https://github.com/vistaprint/TerraformModuleTesting'
+  spec.summary       = 'Set of scripts to ease testing of Terraform modules.'
+  spec.homepage      = 'https://github.com/vistaprint/tfmodtest'
   spec.license       = 'Apache-2.0'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
 
-  spec.add_runtime_dependency 'TerraformDevKit', '~> 0.2'
+  spec.add_runtime_dependency 'TerraformDevKit', '>= 0.2.6', '< 0.3.0'
 end
