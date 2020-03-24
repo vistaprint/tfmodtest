@@ -63,12 +63,11 @@ The `custom_test` task is a hook in TerraformDevKit that is called once all the 
 Create `test/<my_module>/config/config-dev.yml` that contains:
 
 ```yml
-terraform-version: 0.11.0
+terraform-version: 0.12.24
 project-name: my module tests
 aws:
   profile: <profile>
   region: <region>
-
 ```
 
 This configuration determines where Terraform will create the infrastructure during test execution. 
@@ -109,10 +108,8 @@ To start using `awspec` follow the [Getting Started ](https://github.com/k1LoW/a
 
 # Requirements
 
-* Terraform 0.11.0 or above
+* Terraform 0.12.0 or above
 
 # Development
 
 To install this gem locally run `rake install` You should then be able to reference it in your local projects.
-
-
